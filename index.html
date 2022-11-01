@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_01</title>
+    <link rel="stylesheet" href="">
+    <base href="image/">
+    <style>
+        .one:hover {
+            transform: rotate(180deg);
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 2s 1s infinite;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                transform: rotate(0deg);
+                border-radius: 0px
+            }
+
+            to {
+                left: 200px;
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
+            }
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        nav ul li a:visited {
+            color: green;
+        }
+
+        nav ul li a:hover {
+            font-size: x-large;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        nav ul li a:active {
+            font-style: italic;
+        }
+
+
+        .border {
+            border: 4px solid red;
+            border-top-left-radius: 6px;
+        }
+
+        #uni {
+            color: aqua;
+        }
+
+        main>h1 {
+            border: 2px solid hotpink;
+        }
+
+        address,
+        details {
+            color: aquamarine;
+            font-variant: small-caps;
+        }
+
+        h2~p {
+            margin-top: 30px;
+        }
+
+        a[target=_blank] {
+            background-color: yellow;
+        }
+
+        figure+img {
+            filter: blur(5px);
+        }
+
+        input::placeholder {
+            color: green;
+        }
+
+        input:required {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a:link {
+            background-color: violet;
+        }
+
+        p::first-letter {
+            letter-spacing: 3px;
+        }
+
+        :empty {
+            padding-top: 20px;
+        }
+
+        p::before {
+            content: "FAZAL";
+        }
+
+        span::after {
+            content: "Thanks";
+        }
+
+        a[href^="https"] {
+            margin-inline-start: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="position:relative ; left:100px">
+        <main>
+            <h1 style="margin: 20px;">NATIONAL <span style="color: blue;" id="uni">TEXTILE</span> UNIVERSITY</h1>
+        </main>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.google.com" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+
+
+
+    <!-- Heading Tag -->
+    <h1 style="color: red; font-variant: small-caps;">There are six types of heading Tage in HTML</h1>
+    <blockquote cite="https://ntu.edu.pk/sos.php"></blockquote>
+    <h2 style="font-size:x-large">School of Science</h2>
+    <p style="opacity: 20%;">The School of Science (SOS) offers supportive education to the core departments of the
+        university</span> at graduate and
+        undergraduate level with the aim to provide a strong background in the areas of Computing, Physics, Chemistry,
+        Mathematics and Statistics.
+    <div style="color: blue; font-stretch: wider; padding: 30px;">
+        Faculty members of the School of Science are highly qualified who have received their degrees from renowned
+        universities of the world, aiming to develop students into researchers, engineers, innovators as well as highly
+        specialized professionals with broad vision and excellent skills.
+    </div>
+
+
+    <q style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> SOS has state
+        <span class="border"> undergraduate students. SOS faculty members are actively engaged</span>of the art research
+        labs with excellent facilities for research activities of the graduate and
+        <span id="uni">in various research</span>
+        projects within the
+        institute and in collaboration with other institutes and industry.
+    </q>
+
+    The School of Science has two academic departments:
+
+    Department of Applied Sciences
+    Department of Computer Science</p>
+    <h2 style="direction:rtl">Department of Computer Science</h2>
+    <h3>Offered Courses</h3>
+    <h4 style="font-weight: 100;">
+        <abbr title="Becholar of Science in Computer Science">BSCS</abbr>
+    </h4>
+    <h4>
+        <abbr title="Becholar of Science in Software Engineering">BSSE</abbr>
+    </h4>
+    <h4>
+        <abbr title="Becholar of Science in Artificial Intelligence">BSAI</abbr>
+    </h4>
+    <p style="font-style:italic; text-align-last:right;"><b>Lorem ipsum </b>dolor sit amet <strong>consectetur
+            adipisicing elit</strong> . <i>Laboriosam dolores
+            cupiditate</i>
+        <u>deleniti tempore reprehenderit voluptatibus officiis nihil?Lorem ipsum dolor sit amet,</u> <mark>consectetur
+            adipisicing</mark>
+        elit. <em style="text-decoration:overline; text-decoration-color: rgb(40, 245, 13);">Hic at excepturi quasi
+            harum veniam odio dignissimos</em> in itaque aperiam quas explicabo,
+        voluptatibus
+        debitis aliquid corporis iusto soluta vero eius velit sapiente voluptas. Dolores distinctio expedita quisquam,
+        natus fuga laborum sed harum veniam architecto eaqueAssumenda atque perspiciatis rerum aut cupiditate!
+    </p>
+    <pre>
+        The most <b>way for the world</b>  to be destroyed,
+            Most experts agree, ‘ is by accident’.
+                That’s where we come in;
+        “We’re computer professionals. We cause accidents.”
+       
+    </pre>
+    <main style="background-image:url('image/pexels-dana-tentis-750073.jpg') ;">
+        <h1 style="text-shadow: 2px 2px rgb(73, 110, 192);">Most Popular Browsers</h1>
+        <p>Chrome, <bdi>Firefox و Edge هما أكثر المتصفحات استخدامًا اليوم</bdi> </p>
+
+        <article style="margin-left: 10px;">
+            <h2>Google Chrome</h2>
+            <p>Google <bdo dir="rtl">Chrome is a web browser developed by Google, released in 2008.</bdo> Chrome is the
+                world's most popular web browser today!</p>
+        </article>
+
+        <article style="margin:10px;">
+            <h2>Mozilla Firefox</h2>
+            <p style="text-indent: 60px; text-justify:distribute ;">Mozilla Firefox is an
+                open-sourc<wbr>eweb browser de<wbr>veloped by <wbr>Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+
+        <article style="margin-top:10xp; word-spacing:20px ;">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft <s>Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                    Internet Explorer.</s> </p>
+        </article>
+    </main>
+    <ruby>
+        漢 <rp>(</rp>
+        <rt>ㄏㄢˋ</rt>
+        <rp>)</rp>
+    </ruby>
+    <aside style="margin-bottom:10xp;text-align: center; letter-spacing: 20px; border-bottom: 2px solid yellow ;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi blanditiis recusandae vel a officiis. Earum neque
+        obcaecati amet natus laudantium eaque distinctio ab sed, odit, minus magnam, dolor saepe nemo.
+    </aside>
+    <p style="text-transform:uppercase ;"><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+
+    <p>x<sub>2</sub> <br> y<sup>3</sup></p>
+
+    <audio src="01. Tum Hi Ho.mp3" controls></audio>
+    <video src="WhatsApp Video 2022-10-16 at 11.01.33 AM.mp4" controls max-width="300" height="200px"></video>
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/tTQFObPYa-w" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <img src="image.jpeg" alt="This is an image" width="300" height="215">
+    <figure>
+        <img src="download.jpg" width="300" height="215">
+        <figcaption style="line-height:40px ;">National Textile University</figcaption>
+    </figure>
+    <picture>
+        <source media="(min-width:650px)" srcset="image/download.jpg">
+        <source media="(min-width:465px)" srcset="image/image.jpeg">
+        <img src="image/pexels-designecologist-1779487.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <video controls width="300" height="215" class="one">
+        <source src="WhatsApp Video 2022-10-16 at 11.01.33 AM.mp4">
+    </video>
+    <object data="WhatsApp Video 2022-10-16 at 11.01.33 AM.mp4" width="300" height="215"></object>
+    <portal src="https://insurancenewshub.online/2022/10/16/your-guide-to-choosing-the-right-insurance/"
+        style="display:portal;"></portal>>
+    <h4>First C++ Code</h4>
+    <code style="outline: 2px solid yellow;">
+        #inclide <iostream>
+        using namespace std;
+        int main()
+        {
+            cout<<"Hello world";
+        }
+    </code>
+
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+    <br>
+    <p>Message from my computer:</p>
+
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <br>
+
+    <p style="float:left ;">The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the
+        base, and <var>h</var> is
+        the vertical height.</p>
+    <br>
+
+
+    <!-- Forms in HTML -->
+    <section>
+        <h2>
+            <center style="visibility:hidden ;">HTML FORM</center>
+        </h2>
+        <form action="" method="get">
+            <label for="fname">First Name:</label>
+            <input type="text" name="first_name" placeholder="First"><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" placeholder="Last Name..."><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required><br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="Male"><label>Male</label>
+            <input type="radio" name="gender" value="female"><label>Female</label><br> <br>
+
+            <label for="subject">Subject:</label>
+
+            <input type="checkbox" name="subject" value="math">Math
+            <input type="checkbox" name="subject1" value="Computer Science">Computer
+            <input type="checkbox" name="subject2" value="IT">IT
+            <input type="checkbox" name="subject3" value="SE">SE
+            <br><br>
+            <label for="number">Marks</label>
+            <input type="number" name="marks">
+
+            <br><br>
+            <label for="website">Website</label>
+            <input type="url" name="website">
+            <br><br>
+            <label for="Date">Date of Birth:</label>
+            <input type="date" name="dob">
+
+            <br><br>
+            <label for="html">HTML5 Knowledge</label>
+
+            <progress id="html" max="100" value="80"> 80% </progress>
+            <br><br>
+            <select>
+                <optgroup label="Group 1">
+                    <option>Option 1.1</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>Option 2.1</option>
+                    <option>Option 2.2</option>
+                </optgroup>
+                <optgroup label="Group 3" disabled>
+                    <option>Option 3.1</option>
+                    <option>Option 3.2</option>
+                    <option>Option 3.3</option>
+                </optgroup>
+            </select>
+
+
+            <br><br>
+            <br><br>
+            <label for="fuel">Fuel level:</label>
+
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">
+                at 50/100
+            </meter>
+
+            <br><br>
+            <label for="subject">Choose Subject:</label>
+            <input list="subjectchoice" id="subject" name="subject">
+            <datalist id="subjectchoice">
+                <option value="Bs Computer Science">
+                <option value="Bs Information Technology">
+                <option value="Bs Software Engineering">
+            </datalist>
+            <br><br>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+            </form>
+
+            <br><br>
+
+            <label for="cars">Choose a car:</label>
+            <select name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi" selected="selected">Audi</option>
+                <option value="BMW">BMW</option>
+            </select><br><br><br>
+
+            <label>Message:</label>
+            <textarea name="message" rows="10" cols="100"></textarea><br>
+
+            <input type="submit" value="Click to Submit the form">
+            <br>
+            <br>
+            <input type="reset" value="CLick to reset the form">
+
+        </form>
+    </section>
+
+
+    <!-- Table in HTML -->
+    <br>
+    <br>
+    <br>
+    <section>
+        <h2>Tables in HTML</h2>
+        <table border="2" cellpadding="10" cellspacing="5" width="50%" style="border-collapse: collapse;">
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Subject</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ali</td>
+                <td>BSCS</td>
+                <td>Computes Science</td>
+                <td>SE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ali2</td>
+                <td colspan="2">
+                    <center>BSCS2</center>
+                </td>
+
+                <td>SE2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td rowspan="2">Ali3</td>
+                <td>BSCS3</td>
+                <td style="table-layout:fixed ;">Computes Science3</td>
+                <td>SE3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+
+                <td>BSCS4</td>
+                <td>Computes Science4</td>
+                <td>SE4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>List in HTML</h2>
+
+        <ol style="list-style-type:lower-latin ;">
+            <li>Name</li>
+            <li>Class</li>
+            <li>Name</li>
+            <li>
+                <ol>
+                    <li>Name</li>
+                    <li>Class</li>
+                </ol>
+            </li>
+            <li>Name</li>
+            <li>Class</li>
+            <li>Name</li>
+            <li>Class</li>
+        </ol>
+
+        <hr>
+        <ul style="list-style:lower-alpha ;">
+            <li style="list-style-position:outside">Name</li>
+            <li>Class</li>
+            <li>Subject</li>
+            <li>Name</li>
+            <li>
+                <ul>
+                    <li>Test1</li>
+                    <li>Test2</li>
+                    <li>Test3</li>
+                    <li>
+                        <ul>
+                            <li>test1.1</li>
+                            <li>test1.2</li>
+                            <li>test1.3</li>
+                            <li>test1.4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Subject</li>
+            <li>Name</li>
+            <li>Class</li>
+            <li>Subject</li>
+            <li>Name</li>
+            <li>Class</li>
+            <li>Subject</li>
+
+        </ul>
+    </section>
+    <section>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HTML Ia a Structure of Website</dd>
+            <dt>CSS</dt>
+            <dd>CSS is is Presentation of Website</dd>
+
+        </dl>
+    </section>
+    <br><br>
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+        <circle cx="50" cy="50" r="40" />
+    </svg>
+    <br><br>
+    <p>
+        The infinite sum
+        <math display="block">
+            <mrow>
+                <munderover>
+                    <mo>∑</mo>
+                    <mrow>
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                    </mrow>
+                    <mrow>
+                        <mo>+</mo>
+                        <mn>∞</mn>
+                    </mrow>
+                </munderover>
+                <mfrac>
+                    <mn>1</mn>
+                    <msup>
+                        <mi>n</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mfrac>
+            </mrow>
+        </math>
+        is equal to the real number
+        <math display="inline">
+            <mfrac>
+                <msup>
+                    <mi>π</mi>
+                    <mn>2</mn>
+                </msup>
+                <mn>6</mn>
+            </mfrac>
+        </math>.
+    </p>
+
+
+    <details>
+        <summary style="border:2px solid red">Details</summary>
+        Something small enough to escape casual notice.
+    </details>
+    <dialog open>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+    <br><br>
+    <hr>
+    <div class="square"></div>
+
+    <noscript>
+        <!-- anchor linking to external file -->
+        <a href="https://www.google.com">GOOGLE</a>
+    </noscript>
+    <br><br>
+    <br><br>
+    <footer>
+        <address style="text-decoration-line:overline; text-decoration-style: double;">
+            Written by <a href="https://github.com/fazalmiran">Fazal Miran</a>.<br>
+            Location: <br>
+            National Textile University Faisalabad<br>
+
+        </address>
+    </footer>
+
+
+
+
+    <script>
+    // JavaScript Code
+    </script>
+
+</body>
+
+</html>
